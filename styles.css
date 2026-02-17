@@ -1,8 +1,11 @@
-
+*{
+    border: 1px solid red;
+}
 
 .container{
     display:grid;
     grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .sidebar-container{
@@ -18,4 +21,31 @@
 .content-container{
     grid-column: 2/3;
     grid-row: 2/3;
+}
+
+.sidebar {
+    display:grid;
+    grid-template-columns: 1fr 7fr;
+    background-color: rgb(17, 144, 255);
+    height: 100%;
+}
+
+.sidebar > div{
+    color:white;
+}
+
+.header{
+    background-color: white;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-top-row{
+    display: grid;
+    grid-template-columns: 1fr 15fr 1fr 2fr 4fr;
+}
+
+.header-bottom-row{
+    display:grid;
+    grid-template-columns: 1fr 7fr 4fr
 }
