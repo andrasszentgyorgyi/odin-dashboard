@@ -60,11 +60,21 @@
 .content-projects{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr repeat(3, 6fr);
 }
 
 .content-rightside{
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
     height: 100%;
+}
+
+.announcements{
+    display:grid;
+    grid-template-rows: 1fr 8fr;
+}
+
+.trending{
+    display:grid;
+    grid-template-rows: 1fr 8fr;
 }
