@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red;
+
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -113,7 +113,7 @@
 
 .trending {
     display: grid;
-    grid-template-rows: 1fr 10fr;
+    grid-template-rows: 1fr 7fr;
 }
 
 .project-button-container {
@@ -285,8 +285,15 @@
     width: 50px;
     height: auto;
     border-radius: 50;
+    margin-right: 10px;
 }
 
 #user-last{
     padding-bottom: 10px;
+}
+
+.user-username{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
