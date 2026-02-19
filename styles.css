@@ -28,13 +28,14 @@
     grid-row: 1/2;
     display: grid;
     padding: 12px;
+    padding-bottom: 5px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
     0 px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .header-container > div {
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .content-container {
@@ -78,7 +79,7 @@
 
 .header-top-row {
     display: grid;
-    grid-template-columns: 1fr 15fr 1fr 2fr 4fr;
+    grid-template-columns: 1fr 12fr 1.5fr 6fr;
 }
 
 .header-bottom-row {
@@ -123,20 +124,26 @@
 .header-button-container>button {
     background-color: rgb(17, 144, 255);
     color: white;
-    border-radius: 10px;
+    border-radius: 30px;
+    height: 30px;
+    width: 100%;
+    border: 0px;
 }
 
 .header-button-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0.8em;
     gap: 0.5em;
     justify-content: space-between;
+    padding-bottom: 0;
+
 }
 
 #search-bar{
     background-color: rgb(216, 216, 216);
     border-radius: 30px;
+    padding-bottom: 5px;
+    margin-top: -5px;
 }
 
 .sidebar-icon{
@@ -162,13 +169,16 @@
 
 #pfp1{
     border-radius: 50;
-    width: 50px;
+    width: 45px;
+    margin-right: 10px;
 }
 
 #pfp2{
     border-radius: 50;
-    width: 50px;
+    width: 60px;
 }
+
+
 
 .project-card{
     background-color: white;
@@ -177,6 +187,9 @@
     border-left: 7px solid #ffc107;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr;
 }
 
 .announcements-container, .trending-container{
@@ -192,4 +205,43 @@
 
 .projects-text, .announcements-text, .trending-text{
     margin: 10px 0 10px 0;
+}
+
+#search-button, #notification-bell{
+    max-width: 40px;
+    min-width: 30px;
+}
+
+#notification-bell{
+    margin-right: 15px;
+    min-width: 30px
+}
+
+#profile-picture-top{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+#user-top{
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#username-top{
+    font-weight: 650;
+    font-size: 14pt;
+}
+
+.greeting-container > div {
+    font-weight: 800;
+}
+
+#greeting-text{
+    font-size: 12pt;
+}
+
+#greeting-name{
+    font-size: 18pt;
 }
