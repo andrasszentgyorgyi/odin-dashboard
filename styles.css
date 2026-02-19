@@ -42,7 +42,7 @@
 .content-container {
     grid-column: 2/3;
     grid-row: 2/3;
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(228, 228, 228);
     padding: 12px;
     padding-top: 0;
 }
