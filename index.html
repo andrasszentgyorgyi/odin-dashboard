@@ -6,44 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <div class="sidebar-container">
             <div class="sidebar">
-
-
-                <div class="icons-container">
-                    <div id="dash-icon">i</div>
-                    <div id="home-icon">i</div>
-                    <div id="profile-icon">i</div>
-                    <div id="messages-icon">i</div>
-                    <div id="history-icon">i</div>
-                    <div id="tasks-icon">i</div>
-                    <div id="communities-icon">i</div>
-                    <div id="settings-icon">i</div>
-                    <div id="support-icon">i</div>
-                    <div id="privacy-icon">i</div>
-                </div>
-                <div class="sidebar-text-container">
+                <div class="sidebar-title-block">
+                    <div id="dash-icon">
+                        <img src="assets/view-dashboard.svg" alt="Dashboard icon">
+                    </div>
                     <div id="dash">Dashboard</div>
+                </div>
+                <div class="sidebar-upper-block">
+                    <div id="home-icon">
+                        <img src="assets/home.svg" alt="Home icon" class="sidebar-icon">
+                    </div>
                     <div id="home">Home</div>
+                    <div id="profile-icon">
+                        <img src="assets/card-account-details-outline.svg" alt="Profile icon" class="sidebar-icon">
+                    </div>
                     <div id="profile">Profile</div>
+                    <div id="messages-icon">
+                        <img src="assets/message-reply.svg" alt="Messages icon" class="sidebar-icon">
+                    </div>
                     <div id="messages">Messages</div>
+                    <div id="history-icon">
+                        <img src="assets/clock-time-three.svg" alt="History icon" class="sidebar-icon">
+                    </div>
                     <div id="history">History</div>
+                    <div id="tasks-icon">
+                        <img src="assets/note-multiple.svg" alt="Tasks icon" class="sidebar-icon">
+                    </div>
                     <div id="tasks">Tasks</div>
+                    <div id="communities-icon">
+                        <img src="assets/account-group.svg" alt="Communities icon" class="sidebar-icon">
+                    </div>
                     <div id="communities">Communities</div>
+                </div>
+                <div class="sidebar-lower-block">
+                    <div id="settings-icon">
+                        <img src="assets/cog.svg" alt="Settings icon" class="sidebar-icon">
+                    </div>
                     <div id="settings">Settings</div>
+                    <div id="support-icon">
+                        <img src="assets/help-box.svg" alt="Support icon" class="sidebar-icon">
+                    </div>
                     <div id="support">Support</div>
+                    <div id="privacy-icon">
+                        <img src="assets/shield-check.svg" alt="Privacy icon" class="sidebar-icon">
+                    </div>
                     <div id="privacy">Privacy</div>
                 </div>
+
             </div>
+            <div class="empty-space"></div>
         </div>
         <div class="header-container">
             <div class="header-top-row">
-                <div id="search-button">SB</div>
-                <div id="search-bar">SEARCHBAR</div>
+                <div id="search-button">
+                    <img src="assets/magnify.svg" alt="Search button">
+                </div>
+                <input type="text" id="search-bar">
                 <div id="notification-bell">BELL</div>
                 <div id="profile-picture-top">PFP1</div>
                 <div id="username-top">Morgan Oakley</div>
