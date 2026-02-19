@@ -1,4 +1,5 @@
 * {
+    border: 1px solid red;
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -103,17 +104,16 @@
 .content-rightside {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 100%;
 }
 
 .announcements {
     display: grid;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr 6fr;
 }
 
 .trending {
     display: grid;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr 10fr;
 }
 
 .project-button-container {
@@ -144,6 +144,8 @@
     border-radius: 30px;
     padding-bottom: 5px;
     margin-top: -5px;
+    border: none;
+    height: 25px;
 }
 
 .sidebar-icon{
@@ -195,7 +197,20 @@
 .announcements-container, .trending-container{
     background-color: white;
     border-radius: 10px;
-    padding: 10px;
+}
+
+.announcements-container{
+    display: grid;
+    padding: 15px 15px 0 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.trending-container{
+    display: grid;
+    padding: 15px 15px 0 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
 }
 
 .card-buttons{
@@ -205,6 +220,8 @@
 
 .projects-text, .announcements-text, .trending-text{
     margin: 10px 0 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 #search-button, #notification-bell{
@@ -244,4 +261,32 @@
 
 #greeting-name{
     font-size: 18pt;
+}
+
+.announcement-body{
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    grid-template-columns: 3fr 5fr;
+}
+
+.user-text{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trending-pfp{
+    width: 50px;
+    height: auto;
+    border-radius: 50;
+}
+
+#user-last{
+    padding-bottom: 10px;
 }
