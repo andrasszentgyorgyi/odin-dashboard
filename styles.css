@@ -1,9 +1,7 @@
 * {
-
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
 }
 
@@ -29,16 +27,22 @@
     grid-column: 2/3;
     grid-row: 1/2;
     display: grid;
+    padding: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+    0 px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .header-container > div {
     align-items: center;
+    gap: 15px;
 }
 
 .content-container {
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: rgb(212, 212, 212);
+    padding: 12px;
+    padding-top: 0;
 }
 
 .sidebar {
@@ -79,18 +83,20 @@
 
 .header-bottom-row {
     display: grid;
-    grid-template-columns: 1fr 7fr 4fr
+    grid-template-columns: 1fr 7fr 4fr;
 }
 
 .content {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 15px;
 }
 
 .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
 }
 
 .content-rightside {
@@ -144,10 +150,46 @@
     font-size: 18pt;
     align-items: center;
     padding-top: 10px;
+    margin-top: 10px;
 }
 
 #dash-icon{
     width: 3em;
     padding-left: 6px;
     filter:invert(1);
+    margin-top: 10px;
+}
+
+#pfp1{
+    border-radius: 50;
+    width: 50px;
+}
+
+#pfp2{
+    border-radius: 50;
+    width: 50px;
+}
+
+.project-card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border-left: 7px solid #ffc107;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.announcements-container, .trending-container{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-buttons{
+    max-width: 25px;
+    min-width: 20px;
+}
+
+.projects-text, .announcements-text, .trending-text{
+    margin: 10px 0 10px 0;
 }
